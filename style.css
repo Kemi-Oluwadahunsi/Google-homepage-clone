@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* margin-right: 2rem; */
+}
+
+.nav {
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+
+span {
+    font-size: .9rem;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+span:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.grid-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.grid-icon:hover {
+    background-color: rgb(241, 238, 238);
+}
+
+.user {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+
+.user img {
+    border-radius: 50%;
+}
+
+.user:hover {
+    border: 5px solid rgb(241, 238, 238);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 7rem;
+}
+
+.search {
+    display: flex;
+    width: 35%;
+    height: 3rem;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.search:hover{
+    box-shadow: 1px 1px 5px rgb(180, 178, 178);
+}
+
+input {
+    width: 80%;
+    height: 2.5rem;
+    border: 1px solid transparent; 
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.searchIcons {
+    display: flex;
+    gap: 1rem;
+}
+
+.search2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.googleSearch, .feelingLucky {
+    background-color: rgb(247, 247, 252);
+    padding: .6rem 1rem;
+    border-radius: 5px;
+    font-size: .9rem;
+    border: 1px solid transparent;
+    color: rgb(70, 69, 69);
+    cursor: pointer;
+    /* display: inline; */
+}
+
+.googleSearch:hover,
+.feelingLucky:hover {
+    border: .2px solid rgb(199, 197, 197);
+    box-shadow: 0px 1px 3px rgb(204, 204, 204);
+}
+
+.language {
+    font-size: small;
+    color: #4d5156;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 14.2rem;
+}
+
+.language a {
+    text-decoration: none;
+}
+
+.language a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f6f6f8;
+    
+}
+
+.first {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-bottom: .5px solid rgb(206, 206, 206);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.second {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.links{
+    flex: 1;
+    display: flex;
+}
+
+.links ul,
+.legal ul {
+    display: flex;
+    justify-content: end;
+}
+
+.legal {
+    flex: 1;
+}
+
+
+ul > li {
+    list-style-type: none;
+    padding: 0 1rem;
+    font-family:Arial, sans-serif;
+    font-size: .9rem;
+}
+
+ul > li:hover {
+    text-decoration: underline;
+}
