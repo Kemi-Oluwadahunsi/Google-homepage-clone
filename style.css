@@ -7,6 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100dvh;
 }
 
 nav{
@@ -22,8 +23,14 @@ nav{
     justify-content: space-around;
     align-items: center;
     margin-top: .5rem;
+    margin-right: 1rem;
 }
 
+.spanDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
 
 span {
     font-size: .9rem;
@@ -66,13 +73,25 @@ span:hover {
     border: 5px solid rgb(241, 238, 238);
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 8rem;
+}
+
 .main {
+    height: 80%;
+}
+
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
 
 .search {
@@ -133,7 +152,7 @@ input {
     font-size: small;
     color: #4d5156;
     font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 14.2rem;
+    /* padding-bottom: 14.2rem; */
 }
 
 .language a {
@@ -145,9 +164,11 @@ input {
 }
 
 footer {
-    height: 6rem;
+    /* height: 6rem; */
+    height: 13%;
     display: flex;
     flex-direction: column;
+    justify-content: end;
     width: 100%;
     background-color: #f6f6f8;
     
@@ -196,4 +217,262 @@ ul > li {
 
 ul > li:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+
+.nav {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 0 0 1rem;
+}
+
+.spanDiv {
+    justify-content: space-between;
+    width: 30%;
+}
+
+span {
+    font-size: .9rem;
+    cursor: none;
+}
+
+span:hover {
+    text-decoration: none;
+}
+
+.grid-icon {
+    border-radius: 0;
+    padding: 0;
+    margin-left: 9rem;
+    cursor: none;
+}
+
+.grid-icon:hover {
+    background: none;
+}
+
+.user {
+    border-radius: 0;
+    border: 0;
+    cursor: none;
+}
+
+.user img {
+    border-radius: 50%;
+}
+
+.user:hover {
+    background: none;
+}
+
+form {
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.logo {
+    width: 40%;
+    margin-top: 5rem;
+}
+
+.search {
+    width: 90%;
+    height: 2.3rem;
+}
+
+.search:hover{
+    box-shadow: none;
+}
+
+input {
+    width: 75%;
+    height: 2rem;
+    padding: 0 1rem;
+    font-size: .9rem;
+}
+
+.searchIcons {
+    gap: .5rem;
+    width: 25%;
+}
+
+.microphone {
+    width: 40%;
+}
+
+.camera {
+    width: 40%;
+    height: 5%;
+}
+
+.search2 {
+    display: none;
+}
+
+
+
+.language {
+    font-size: x-small;
+}
+
+.language a:hover {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f6f6f8;
+    
+}
+
+.first {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    cursor: none;
+}
+
+.second {
+    flex-direction: column;
+    padding: 0;
+    gap: .5rem;
+    cursor: none;
+}
+
+ul > li {
+    padding: 0 1rem;
+    font-size: .9rem;
+}
+
+ul > li:hover {
+    text-decoration: none;
+}
+}
+
+@media screen and (min-width: 501px) and (max-width: 770px) {
+
+.nav {
+    padding: 0 0 0 1rem;
+    width: 30%;
+}
+
+.spanDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+span:hover {
+    text-decoration: none;
+}
+
+.grid-icon {
+    border-radius: 0;
+    padding: 0;
+    cursor: none;
+}
+
+.grid-icon:hover {
+    background: none;
+}
+
+.user {
+    border-radius: 0;
+    border: 0;
+    cursor: none;
+}
+
+.user img {
+    border-radius: 50%;
+}
+
+.user:hover {
+    background: none;
+}
+
+form {
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.logo {
+    width: 40%;
+    margin-top: 5rem;
+}
+
+.search {
+    width: 90%;
+    height: 2.3rem;
+}
+
+.search:hover{
+    box-shadow: none;
+}
+
+input {
+    width: 75%;
+    height: 2rem;
+    padding: 0 1rem;
+    font-size: .9rem;
+}
+
+.searchIcons {
+    gap: .5rem;
+    width: 25%;
+}
+
+.microphone {
+    width: 40%;
+}
+
+.camera {
+    width: 40%;
+    height: 5%;
+}
+
+.search2 {
+    display: none;
+}
+
+
+
+.language {
+    font-size: x-small;
+}
+
+.language a:hover {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f6f6f8;
+    
+}
+
+.first {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    cursor: none;
+}
+
+.second {
+    flex-direction: column;
+    padding: 0;
+    gap: .5rem;
+    cursor: none;
+}
+
+ul > li {
+    padding: 0 1rem;
+    font-size: .9rem;
+}
+
+ul > li:hover {
+    text-decoration: none;
+}
 }
