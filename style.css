@@ -78,7 +78,7 @@ span:hover {
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 
 .main {
@@ -90,7 +90,7 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.2rem;
     margin-top: 2rem;
 }
 
@@ -375,13 +375,13 @@ ul > li:hover {
 
 .nav {
     padding: 0 0 0 1rem;
-    width: 30%;
+    width: 40%;
 }
 
 .spanDiv {
     display: flex;
     justify-content: space-between;
-    width: 45%;
+    width: 50%;
 }
 
 span:hover {
@@ -413,8 +413,8 @@ span:hover {
 }
 
 .logo {
-    width: 20%;
-    margin-top: 3rem;
+    width: 25%;
+    margin-top: 4rem;
 }
 
 /* .main {
@@ -507,5 +507,35 @@ footer {
 
 ul > li:hover {
     text-decoration: none;
+}
+}
+
+@media screen and (min-width: 771px) and (max-width: 1350px) {
+
+.nav {
+    width: 26%;
+}
+
+.logo {
+    width: 20%;
+    margin-top: 4rem;
+}
+
+.search {
+    width: 40%;
+    gap: 1rem;
+}
+
+.googleSearch, .feelingLucky {
+    font-size: .8rem;
+}
+
+.language {
+    font-size: small;
+}
+
+.links {
+    /* width: 70%; */
+    flex: 2;
 }
 }
